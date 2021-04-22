@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tempInputHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="Current Temperature : "
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"/>
+                <EditText
+                    android:id="@+id/tempInput"
+                    android:layout_below="@id/tempInputHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="0.0"
+                    android:layout_margin="7dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/descp"
+                    android:layout_below="@+id/tempInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Input with decimals in Fehrenhite"/>
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_below="@+id/descp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="submit"
+                    android:layout_centerHorizontal="true"
+                    android:background="#2C28FF"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_margin="7dp"/>
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/graphBUttonCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_below="@+id/cardInput">
+
+            <Button
+                android:id="@+id/graphButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2C28FF"
+                android:text="Show Temperature Record"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/graphBUttonCard"
+            android:id="@+id/plotTempCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:layout_gravity="center">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barTempChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+</layout>

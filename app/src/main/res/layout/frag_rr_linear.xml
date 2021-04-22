@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/timerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timer"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:background="#2C28FF"
+                    android:layout_margin="5dp"/>
+
+                <ImageView
+                    android:id="@+id/timerImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0 Seconds"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:background="#2C28FF"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ageCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="#2C28FF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="AGE : "
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="0.0"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="**Enter AGE in years"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/clickCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/touchView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_touch_blue"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/retakeButton"
+            android:layout_below="@+id/ageCard"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Measure"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#2C28FF"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</layout>

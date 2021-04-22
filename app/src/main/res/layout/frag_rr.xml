@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap screen for each breath (full inhale and exhale) till the timer ends"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_margin="7dp"/>
+        <TextView
+            android:id="@+id/timerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instructions"
+            android:text="Timer:"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_margin="7dp"/>
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timerHeader"
+            android:text="30"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timer"
+            android:text="sec"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sec"
+            android:layout_margin="7dp"
+            android:id="@+id/cardRRheader">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Respiratory Rate :"
+                android:gravity="center"
+                android:id="@+id/RRheader"
+                android:layout_margin="7dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardRRheader"
+            android:layout_margin="7dp"
+            android:id="@+id/cardRR">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rr"
+                android:text="Counting"
+                android:layout_margin="7dp"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardRR"
+            android:id="@+id/rrTrack"
+            android:layout_margin="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous Readings : "
+                    android:layout_margin="7dp"/>
+                <TextView
+                    android:id="@+id/results"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textHeader"
+                    android:text="null"
+                    android:gravity="center"
+                    android:layout_margin="7dp"/>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/retakeButton"
+            android:background="#2C28FF"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_below="@+id/rrTrack"
+            android:layout_centerHorizontal="true"
+            android:text="Measure"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/clickCard"
+            android:layout_below="@+id/retakeButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/touchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_touch_blue"
+                android:layout_margin="5dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</layout>

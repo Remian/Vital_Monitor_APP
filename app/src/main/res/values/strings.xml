@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Bibeat App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">An initiative for predicting covid-19 contamination. The application
+    is able to help users by predicting incidents of covid-19 contamination. User can
+    keep track of respiration rate, temperature and oxygen saturation rate. Respiration rate
+    is a vital parameter for detecting diagnosis of pneumonia.
+        \nThe app is a prototype which is developed by the developers of Bibeat Ltd to combat covid 19.
+    \nBibeat Website: https://bibeat.com/ </string>
+    <string name="call">Emergency Contact For Bangladesh:\n
+
+        +8801550064901
+        +8801550064902
+        +8801550064903
+        +8801550064904
+        +8801550064905
+        +8801401184551
+        +8801401184554
+        +8801401184555
+        +8801401184556
+        +8801401184559
+        +8801401184560
+        +8801401184563
+        +8801401184568
+        +8801937000011
+        +8801937110011
+        +8801927711784
+        +8801927711785
+
+        \nFor Sample Collection in Bangladesh:
+        +8801944333222
+
+        \nBibeat Website: https://bibeat.com/
+</string>
+    <string name="popUp_RR_header">Instructions for Measurement of\nRespiratory Rate </string>
+    <string name="steps">Steps:</string>
+    <string name="step_1">1. Enter age and press the Measure Button to start the measurement process.</string>
+    <string name="Step_2">2. For each INHALE or EXHALE tap on the specific location shown in the screen.</string>
+    <string name="Step_3">3. Each tap is confirmed when the tap sign blinks.</string>
+    <string name="Step_4">4. Repeat till the counter ends.</string>
+</resources>
